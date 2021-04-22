@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(./Gambar/Background\ 1.jpg);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+header h3 {
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+    font-size: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+.navbar ul li a {
+    color: red;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: white
+}
+
+.wallpaper img {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    background-image: url(./Gambar/pow-star.png);
+    border: 1px solid;
+    width: 270px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#menu:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.menu h3 {
+    font-family: 'Nanum Pen Script', cursive;
+    color: red;
+    padding: 10px 10px;
+    font-size: 30px;
+}
+
+.menu img {
+    width: 170px;
+}
+
+.menu h4 {
+    font-family: 'Nanum Pen Script', cursive;
+    color: red;
+    padding: 10px 10px;
+    font-size: 25px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.button-minus {
+    padding: 5px 30px 5px 0px;
+}
+
+.button-jumlah {
+    padding: 5px 0px 5px 0px;
+}
+
+.button-plus {
+    padding: 5px 30px 5px 30px;
+}
+
+.button {
+   display: block;
+   margin: auto;
+   font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    color: red;
+}
