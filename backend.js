@@ -7,63 +7,63 @@ const DELIVERED = "DELIVERED";
 let foods = [
     {
         id: 1,
-        name: "burger",
+        name: "Burger Buto Ijo",
         image: "link",
         price: 1000,
-        qty: 2
+        qty: 0
     },
     {
         id: 2,
-        name: "burger special",
+        name: "Burger Gunderuwo",
         image: "link",
         price: 2000,
         qty: 0
     },
     {
         id: 3,
-        name: "burger istimewa",
+        name: "Burger Pocong",
         image: "link",
         price: 3000,
         qty: 0
     },
     {
         id: 4,
-        name: "kentang goreng",
+        name: "Hot Dog Gukguk",
         image: "link",
         price: 4000,
         qty: 0
     },
     {
         id: 5,
-        name: "burger vegan",
+        name: "Salad Sehat",
         image: "link",
         price: 5000,
         qty: 0
     },
     {
         id: 6,
-        name: "taco kring",
+        name: "Kentang Tuyul",
         image: "link",
         price: 6000,
         qty: 0
     },
     {
         id: 7,
-        name: "soda",
+        name: "Es Kuntilanak Merah",
         image: "link",
         price: 3000,
-        qty: 2
+        qty: 0
     },
     {
         id: 8,
-        name: "air mineral",
+        name: "Cupcake Enak",
         image: "link",
         price: 5000,
         qty: 0
     },
     {
         id: 9,
-        name: "lemon tea",
+        name: "Es Kuyang",
         image: "link",
         price: 7000,
         qty: 0
@@ -93,7 +93,7 @@ function addCart (arrFoods){
     }
 }
 // addCart(foods);
-// // console.log(cart);
+// console.log(cart);
 
 // getCartInfo -> berfungsi untuk mendapatkan informasi cart.
 function getCartInfo(){
