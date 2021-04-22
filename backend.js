@@ -1,3 +1,8 @@
+//variabel const
+const ON_PROGREES = "ON PROGRESS";
+const ON_THE_WAY = "ON_THE_WAY";
+const DELIVERED = "DELIVERED";
+
 // Data-Structure
 let foods = [
     {
@@ -5,7 +10,7 @@ let foods = [
         name: "burger",
         image: "link",
         price: 1000,
-        qty: 0
+        qty: 2
     },
     {
         id: 2,
@@ -47,7 +52,7 @@ let foods = [
         name: "soda",
         image: "link",
         price: 3000,
-        qty: 0
+        qty: 2
     },
     {
         id: 8,
@@ -67,14 +72,49 @@ let foods = [
 
 let cart = {
     status: ON_PROGREES,
-    items: {
-        nama: "",
-        price: 0,
-        qty: 0
-    },
+    items: [], //array yang diisi object {name: string, qty:number dan price:number}
     totalPrice: 0
 }
 
-const ON_PROGREES = "ON PROGRESS";
-const ON_THE_WAY = "ON_THE_WAY";
-const DELIVERED = "DELIVERED";
+//function
+// addCart -> berfungsi untuk menambahkan item food yang dibeli
+function addCart (arrFoods){
+    for (let i = 0; i < arrFoods.length; i++){
+        const food = arrFoods[i];
+        if (food.qty > 0){
+            let obj = {
+                name: food.name,
+                qty: food.qty,
+                price: food.price
+            }
+            cart.totalPrice += food.price*food.qty;
+            cart.items.push(obj);
+        }
+    }
+}
+// addCart(foods);
+// // console.log(cart);
+
+// getCartInfo -> berfungsi untuk mendapatkan informasi cart.
+function getCartInfo(){
+    console.log("Status: ",cart.status);
+    for (let i = 0; i < cart.items.length; i++) {
+        const food = cart.items[i];
+        console.log("name: ",food.name)
+        console.log("qty: ",food.qty);
+        console.log("price:",food.price * food.qty);
+    }
+    console.log("total harga: ", cart.totalPrice);
+}
+// console.log(getCartInfo());
+
+// resetFoodQty -> berfungsi untuk mereset kuantiti setiap menu menjadi 0 atau default.
+function resetFoodQty(){
+    for (let i = 0; i < foods.length; i++) {
+        const food = foods[i];
+        food.qty = 0;
+    }
+}
+// console.log(foods);
+// resetFoodQty();
+// console.log(foods);
