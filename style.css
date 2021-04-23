@@ -23,6 +23,18 @@ header h3 {
     font-size: 20px;
 }
 
+#checkout-btn {
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+#payment-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
 .navbar ul li {
     display: inline-block;
     padding: 20px 15px;
@@ -53,7 +65,7 @@ header h3 {
 .menu {
     background-image: url(./Gambar/pow-star.png);
     border: 1px solid;
-    width: 270px;
+    width: 350px;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 10px;
@@ -176,6 +188,7 @@ td {
     font-family: 'Nanum Pen Script',
         cursive;
     font-size: 32px;
+    margin-left: 5px;
 
 }
 
@@ -183,7 +196,7 @@ td {
     display: inline-block;
     color: white;
     padding: 15px 15px;
-    margin-left: 30px;
+    margin-left: 35px;
     background-color: red;
     font-size: 15px;
 }
@@ -193,7 +206,7 @@ td {
     float: right;
     background-image: url(./Gambar/pow-star.png);
     border: 1px solid;
-    width: 270px;
+    width: 285px;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 10px;
