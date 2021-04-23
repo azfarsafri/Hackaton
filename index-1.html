@@ -25,144 +25,19 @@
         <img src="./Gambar/Logo 1.png" alt="">
     </div>
     <!-- CONTENT -->
-    <div class="content" id="pageMenu">
-        <div class="menu">
-            <h3>Burger Buto Ijo</h3>
-            <img src="./Gambar/Burger Buto Ijo.png" alt="">
-            <h4>Rp 25.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Burger Genderuwo</h3>
-            <img src="./Gambar/Burger Genderuwo.png" alt="">
-            <h4>Rp 23.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Burger Pocong</h3>
-            <img src="./Gambar/Burger Pocong.png" alt="">
-            <h4>Rp 21.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Hot Dog Gukguk</h3>
-            <img src="./Gambar/Hot Dog Gukguk.png" alt="">
-            <h4>Rp 17.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Salad Sehat</h3>
-            <img src="./Gambar/Salad Sehat.png" alt="">
-            <h4>Rp 17.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Kentang Tuyul</h3>
-            <img src="./Gambar/Kentang Tuyul.png" alt="">
-            <h4>Rp 15.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Es Kuntilanak Merah</h3>
-            <img src="./Gambar/Es Kuntilanak Merah.png" alt="">
-            <h4>Rp 10.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Cupcake Enak</h3>
-            <img src="./Gambar/Cupcake Enak.png" alt="">
-            <h4>Rp 7.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-        <div class="menu">
-            <h3>Es Kuyang</h3>
-            <img src="./Gambar/Es Kuyang.png" alt="">
-            <h4>Rp 10.000</h4>
-            <ul>
-                <li class="button-minus"><button>-</button></li>
-                <li class="button-jumlah"><button>0</button></li>
-                <li class="button-plus"><button>+</button></li>
-            </ul>
-        </div>
-    </div>
-    <button class="button">SUBMIT</button>
+    <div class="content" id="pageMenu"></div>
+    <button class="button" id="checkout-btn">C H E C K O U T</button>
     <div id="pageCart" class="menu">
         <h1>ORDER</h1>
-        <table>
-            
-            <tr>
-                <th>Pesanan</th>
-                <th>Jumlah</th>
-                <th>Harga</th>
-            </tr>
-            <tr>
-                <td class="margin-menu">Burger Genderuwo</td>
-                <td>1</td>
-                <td>Rp.23.000</td>
-            </tr>
-            <tr>
-                <td class="margin-menu">Burger Buto Ijo</td>
-                <td>2</td>
-                <td>Rp.25.000</td>
-            </tr>
-            <tr>
-                <td class="margin-menu">Es Kuntilanak Merah</td>
-                <td>1</td>
-                <td>Rp.10.000</td>
-            </tr>
-            <tr>
-                <td class="margin-menu">Hot Dog Gukguk</td>
-                <td>1</td>
-                <td>Rp.17.000</td>
-            </tr>
-            <tr>
-                <td  >Total Harga</td>
-                <td></td>
-                <td >Rp.0</td>
-            </tr>
-
-        </table>
-
+        <table id="tabel-pageCart"></table>
+        <button class="button" id="payment-btn">P A Y</button>
     </div>
-
-    <div class="status">
+    <div class="status" id="status">
         <h1>STATUS</h1>
         <ul>
             <li>Sedang Diproses</li>
-            <img src="./Gambar/Animasi Masak.gif" alt="">
-            <li><button>UPDATE</button></li>
+            <img id="" src="./Gambar/Animasi Masak.gif" alt="">
+            <li><button id="update-status">UPDATE</button></li>
         </ul>
     </div>
     
@@ -170,6 +45,7 @@
     <footer>
         <medium>&copy; Burger Setan Restaurant 2021. Hak Cipta Dilindungi.</medium>
     </footer>
+    <script type="text/javascript" src="backend.js"></script>
 </body>
 </head>
 </html>
